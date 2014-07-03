@@ -57,7 +57,7 @@ if db_slave
     # setup cronjob on db slave
     cron stack do
       minute "10"
-      hour hour
+      hour '11'
       user "root"
       command backup_command
       action :create
